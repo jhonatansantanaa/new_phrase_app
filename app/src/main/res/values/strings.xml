@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PrasheApp</string>
+    <string name="icon_all_inclusive">Icon All Inclusive</string>
+    <string name="icon_sunny">Icon Sunny</string>
+    <string name="icon_happy_emoji">Icon Happy Emoji</string>
+    <string name="movivation_phrase">Movivation Phrase</string>
+    <string name="new_phrase">Nova Frase</string>
+    <string name="hello_kotlin">Olá, Kotlin!</string>
+    <string name="get_started">Vamos Começar ?</string>
+    <string name="your_name">Qual seu name?</string>
+    <string name="btn_save">Salvar</string>
+    <string name="validation_name">Campo Obrigátorio</string>
+    <string name="name">Informe seu nome</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_dark"
+    tools:context=".UserActivity">
+
+
+    <TextView
+        android:id="@+id/text_get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/get_started"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_semibold" >
+    </TextView>
+
+    <EditText
+        android:autofillHints="username"
+        android:id="@+id/edit_text_user"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="16dp"
+        android:hint="@string/your_name"
+        android:textColorHint="@color/white"
+        android:textSize="22sp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:paddingHorizontal="32dp"
+        android:text="@string/btn_save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/open_sans_semibold" >
+    </Button>
+
+</RelativeLayout>
