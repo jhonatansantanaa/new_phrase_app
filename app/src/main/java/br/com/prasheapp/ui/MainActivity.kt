@@ -8,13 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import br.com.prasheapp.infra.MotivationConstants
 import br.com.prasheapp.R
+import br.com.prasheapp.data.Mock
 import br.com.prasheapp.infra.SecurityPreferences
 import br.com.prasheapp.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var bindind: ActivityMainBinding
-    private var categoryId = 0
+    private var categoryId = MotivationConstants.FILTER.ALL
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindind = ActivityMainBinding.inflate(layoutInflater)
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(view)
 
         handleUserName()
+        handleNextPhrase()
 
         // Events
         bindind.btnNewPhrase.setOnClickListener(this)
@@ -33,7 +35,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View) {
         if (view.id == R.id.btn_new_phrase) {
-
+            handleNextPhrase()
         } else if(view.id in listOf(R.id.ic_all,
                 R.id.ic_sunny, R.id.ic_happy )) {
             handleFilter(view.id)
@@ -65,5 +67,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 categoryId = MotivationConstants.FILTER.HAPPY
             }
         }
+    }
+
+    private fun handleNextPhrase() {
+        bindind.textViewPhraseMotivation.text = Mock().getPhrase(categoryId)
     }
 }
