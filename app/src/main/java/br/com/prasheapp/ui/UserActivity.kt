@@ -1,10 +1,13 @@
-package br.com.prasheapp
+package br.com.prasheapp.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import br.com.prasheapp.infra.MotivationConstants
+import br.com.prasheapp.R
+import br.com.prasheapp.infra.SecurityPreferences
 import br.com.prasheapp.databinding.ActivityUserBinding
 
 
@@ -16,7 +19,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityUserBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
+        verifyUserName()
         binding.btnSave.setOnClickListener(this)
 
     }
@@ -38,6 +41,15 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
             finish()
         } else {
             Toast.makeText(this, R.string.validation_name, Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun verifyUserName() {
+        val name = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)
+        if (name != "") {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

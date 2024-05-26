@@ -1,4 +1,4 @@
-package br.com.prasheapp
+package br.com.prasheapp.infra
 
 import android.content.Context
 import android.content.SharedPreferences

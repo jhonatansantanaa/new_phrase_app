@@ -1,4 +1,4 @@
-package br.com.prasheapp
+package br.com.prasheapp.infra
 
 class MotivationConstants private constructor(){
 

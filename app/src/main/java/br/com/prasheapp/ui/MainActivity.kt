@@ -1,9 +1,12 @@
-package br.com.prasheapp
+package br.com.prasheapp.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import br.com.prasheapp.infra.MotivationConstants
+import br.com.prasheapp.R
+import br.com.prasheapp.infra.SecurityPreferences
 import br.com.prasheapp.databinding.ActivityMainBinding
 
 
