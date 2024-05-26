@@ -18,7 +18,7 @@
       android:paddingVertical="10dp" >
 
       <ImageView
-          android:id="@+id/img_view_ic_all_inclusive"
+          android:id="@+id/ic_all"
           android:contentDescription="@string/icon_all_inclusive"
           android:layout_width="42dp"
           android:layout_height="42dp"
@@ -29,7 +29,7 @@
       </ImageView>
 
       <ImageView
-          android:id="@+id/img_view_icon_sunny"
+          android:id="@+id/ic_sunny"
           android:layout_width="42dp"
           android:layout_height="42dp"
           android:contentDescription="@string/icon_sunny"
@@ -39,7 +39,7 @@
       </ImageView>
 
       <ImageView
-          android:id="@+id/img_view_icon_happy"
+          android:id="@+id/ic_happy"
           android:layout_width="42dp"
           android:layout_height="42dp"
           android:layout_weight="1"
