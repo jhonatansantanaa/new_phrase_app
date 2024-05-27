@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrasheApp</string>
+    <string name="icon_all_inclusive">Icon All Inclusive</string>
+    <string name="icon_sunny">Icon Sunny</string>
+    <string name="icon_happy_emoji">Icon Happy Emoji</string>
+    <string name="movivation_phrase">Movivation Phrase</string>
+    <string name="new_phrase">New Phrase</string>
+    <string name="hello_kotlin">Hello, Kotlin!</string>
+    <string name="get_started">Let\'s get started?</string>
+    <string name="your_name">What\'s your name?</string>
+    <string name="btn_save">Save</string>
+    <string name="validation_name">Required field</string>
+
+    <string name="name">Inform your name.</string>
+</resources>

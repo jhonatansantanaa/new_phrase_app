@@ -11,6 +11,7 @@ import br.com.prasheapp.R
 import br.com.prasheapp.data.Mock
 import br.com.prasheapp.infra.SecurityPreferences
 import br.com.prasheapp.databinding.ActivityMainBinding
+import java.util.Locale
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -31,6 +32,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         bindind.icSunny.setOnClickListener(this)
         bindind.icHappy.setOnClickListener(this)
 
+    }
+
+    var mock = Mock()
+
+    private fun refreshPhrase() {
+        bindind.textViewPhraseMotivation.text = mock.getPhrase(filter,  Locale.getDefault().language)
     }
 
     override fun onClick(view: View) {
