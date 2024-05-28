@@ -1,4 +1,5 @@
 ## About App
+<p>I created this simple app in order to understand about Activities, click event methods, also about shared preferences</p>
 
 ## Screens 
 
@@ -13,4 +14,6 @@
 
 #### Screen Happy
 ![Screenshot from 2024-05-28 13-15-44](https://github.com/jhonatansantanaa/new_phrase_app/assets/113706844/d2450967-2f29-46a1-add4-da56d4a5332d)
+
+
 
